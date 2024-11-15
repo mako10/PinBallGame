@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 456786039}
   - component: {fileID: 456786038}
   - component: {fileID: 456786042}
+  - component: {fileID: 456786043}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -215,7 +216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456786037}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.95, y: -0.806375, z: 9.67}
+  m_LocalPosition: {x: 0.05, y: -0.806375, z: 10.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -238,6 +239,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &456786043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456786037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc428e831fc181d40979c3dcc6014de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,8 +359,8 @@ GameObject:
   - component: {fileID: 853402497}
   - component: {fileID: 853402496}
   m_Layer: 0
-  m_Name: Sphere
-  m_TagString: Untagged
+  m_Name: Ball
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,7 +388,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853402495}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bd1a130e5ad5b5d468b724ceddb08b9b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -556,7 +569,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330022014}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bd1a130e5ad5b5d468b724ceddb08b9b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -654,7 +667,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124602012}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: bd1a130e5ad5b5d468b724ceddb08b9b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
