@@ -137,6 +137,8 @@ GameObject:
   - component: {fileID: 456786038}
   - component: {fileID: 456786042}
   - component: {fileID: 456786043}
+  - component: {fileID: 456786044}
+  - component: {fileID: 456786045}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -251,6 +253,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc428e831fc181d40979c3dcc6014de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &456786044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456786037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216e8b28c38a3a44ebb18cb03ae58c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &456786045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456786037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319af1499ff901e4b9794a9277d4552c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,6 +384,7 @@ GameObject:
   - component: {fileID: 853402498}
   - component: {fileID: 853402497}
   - component: {fileID: 853402496}
+  - component: {fileID: 853402501}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Player
@@ -459,6 +486,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &853402501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853402495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b295c42c5f000d4cb690d0dd2462eae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sound1: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
+  sound2: {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
+  sound3: {fileID: 8300000, guid: b6428d4edb06344ba829da4edd9967c1, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
