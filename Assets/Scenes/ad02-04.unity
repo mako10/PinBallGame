@@ -500,7 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound1: {fileID: 8300000, guid: b99da9a57308d4ba1bee1cf1d9038376, type: 3}
   sound2: {fileID: 8300000, guid: ff5f85da24bc943d1abdc5760a22bc81, type: 3}
-  sound3: {fileID: 8300000, guid: b6428d4edb06344ba829da4edd9967c1, type: 3}
+  sound3: {fileID: 8300000, guid: 19f89c6e740e7447f9e12a8310d3e973, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
