@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip sound2;
     public AudioClip sound3;
 
+
     void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
