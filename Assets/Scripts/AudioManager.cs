@@ -5,9 +5,9 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     private AudioSource audioSource;
-    public AudioClip sound1;
-    public AudioClip sound2;
-    public AudioClip sound3;
+    public AudioClip sound01;
+    public AudioClip sound02;
+    public AudioClip sound03;
 
 
     void Start()
@@ -19,15 +19,15 @@ public class AudioManager : MonoBehaviour
     {
         if (other.gameObject.tag == "Blue")
         {
-            audioSource.PlayOneShot(sound1);
+            audioSource.PlayOneShot(sound01);
         }
         else if (other.gameObject.tag == "Block")
         {
-            audioSource.PlayOneShot(sound2);
+            audioSource.PlayOneShot(sound02);
         }
         else
         {
-            audioSource.PlayOneShot(sound3);
+            audioSource.PlayOneShot(sound03);
         }
     }
 
