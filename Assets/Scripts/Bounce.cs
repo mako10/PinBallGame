@@ -6,7 +6,7 @@ public class Bounce : MonoBehaviour
 {
     public float bounceForce = 10.0f;
 
-    void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.CompareTag("Ball")) // タグが "Ball" であるか確認
         {
