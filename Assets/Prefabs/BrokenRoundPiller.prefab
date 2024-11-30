@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8534769614110093653}
   - component: {fileID: 8534769614110093654}
   - component: {fileID: 8534769614110093655}
+  - component: {fileID: -6275664752315347917}
   m_Layer: 0
   m_Name: BrokenRoundPiller
   m_TagString: Untagged
@@ -111,3 +112,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f153de2e2cd53674e9e92ba6909dc402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6275664752315347917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534769614110093640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce49a7321cbff5f4cb928b523977341c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceForce: 10
+  scorePoint: 10
+  gameManager: {fileID: 0}

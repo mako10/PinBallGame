@@ -1,18 +1,28 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Bounce : MonoBehaviour
 {
     public float bounceForce = 10.0f;
+    public int scorePoint = 10;
+    public GameObject gameManager;
+
+    private void Start()
+    {
+        gameManager = GameObject.Find("GameManager");
+    }
+
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Ball")) // ƒ^ƒO‚ª "Ball" ‚Å‚ ‚é‚©Šm”F
+        if (other.gameObject.CompareTag("Ball")) // ã‚¿ã‚°ãŒ "Ball" ã§ã‚ã‚‹ã‹ç¢ºèª
         {
             Vector3 bounceDirection = other.contacts[0].normal;
-            bounceDirection.y = 0; // y²‚É‚Í’µ‚Ë•Ô‚³‚È‚¢
+            bounceDirection.y = 0; // yè»¸ã«ã¯è·³ã­è¿”ã•ãªã„
             other.rigidbody.AddForce(-bounceDirection * bounceForce, ForceMode.Impulse);
+
+            gameManager.GetComponent<GameManager>().AddScore(scorePoint);
         }
     }
 }

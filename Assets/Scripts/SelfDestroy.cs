@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class SelfDestroy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float yDeathPos = -10.0f;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (this.gameObject.transform.position.y < yDeathPos)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
