@@ -22,6 +22,12 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI textClear;
 
+    private AudioSource audioSource;
+    public AudioClip gameOverSound;
+    public AudioClip killBallSound;
+    public AudioClip gameClearSound;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +39,8 @@ public class GameManager : MonoBehaviour
 
         score = 0; // スコアの初期値を設定
         remainTime = 30.0f;
+
+        audioSource = gameObject.AddComponent<AudioSource>();
 
 
         textScore = GameObject.Find("Score").GetComponent<TextMeshProUGUI>(); // スコアを表示するテキストを取得
@@ -74,6 +82,7 @@ public class GameManager : MonoBehaviour
 
             if (remainTime <= 0.0f)
             {
+                audioSource.PlayOneShot(gameOverSound);
                 textGameover.enabled = true;
                 inGame = false;
             }
@@ -85,6 +94,7 @@ public class GameManager : MonoBehaviour
                 SetBallsText(life); // ライフを表示するテキストを更新
                 if (life > 0)
                 {
+                    audioSource.PlayOneShot(killBallSound);
                     // ボールのプレハブを元にボールのオブジェクトを生成
                     GameObject newBall = Instantiate(ballPrefab);
                     newBall.name = ballPrefab.name; // 生成したボールのオブジェクトの名前を設定
@@ -92,6 +102,7 @@ public class GameManager : MonoBehaviour
                 else
                 {
                     life = 0; // ライフが0になったら
+                    audioSource.PlayOneShot(gameOverSound);
                     textGameover.enabled = true;
                     inGame = false;
                 }
@@ -99,6 +110,7 @@ public class GameManager : MonoBehaviour
             GameObject targetObj = GameObject.FindWithTag("Target");
             if (targetObj == null)
             {
+                audioSource.PlayOneShot(gameClearSound);
                 textClear.enabled = true;
                 inGame = false;
             }
