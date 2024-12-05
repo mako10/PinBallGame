@@ -953,6 +953,9 @@ MonoBehaviour:
   ballPrefab: {fileID: 8126367233094353170, guid: c033e39d057bdbe4ea63fcd4415b5a2d, type: 3}
   textGameover: {fileID: 811683208}
   textClear: {fileID: 24136440}
+  gameOverSound: {fileID: 8300000, guid: b9eff218e132a4e76be78840eca96fb2, type: 3}
+  killBallSound: {fileID: 8300000, guid: 80e397195ea2940b69ee7bdbded856a5, type: 3}
+  gameClearSound: {fileID: 8300000, guid: 2667a0a008b044e218b63df62e2be749, type: 3}
 --- !u!4 &1187503093
 Transform:
   m_ObjectHideFlags: 0
